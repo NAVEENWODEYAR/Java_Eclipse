@@ -5,7 +5,7 @@ public class Lamda_Ex
 
 	public static void main(String[] args) 
 	{
-		System.out.println("Git push");
+		System.out.println("Lambda expression - method without the name, return type & access specifier.");
 	}
 
 }

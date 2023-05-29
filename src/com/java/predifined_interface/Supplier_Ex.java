@@ -12,6 +12,7 @@ public class Supplier_Ex implements Supplier<LocalTime>
 		{
 			return LocalTime.now();
 		}
+		
 	public static void main(String[] args) 
 	{
 		// Calling the get() using the class object
@@ -21,6 +22,7 @@ public class Supplier_Ex implements Supplier<LocalTime>
 		// Using the Supplier interface
 		Supplier<LocalDate> s1 = () -> LocalDate.now();
 		System.out.println("Today is "+s1.get());
+		System.out.println(Math.sqrt(100));
 	}
 
 }

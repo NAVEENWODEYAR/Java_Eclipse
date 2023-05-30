@@ -10,7 +10,7 @@ public class Consumer_Ex implements C_Test
 {
 	public void accept(int a)
 	{
-		System.out.println("Consumer interface has get()"+a);
+		System.out.println("Consumer interface has accept()"+a);
 	}
 
 	public static void main(String[] args)

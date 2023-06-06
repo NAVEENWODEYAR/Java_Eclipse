@@ -12,13 +12,14 @@ public class Test {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			
 			//establish connection
-			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/sakila","root","boss");
+			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/javadb","root","boss");
 			
 			Statement st=con.createStatement();
 			
 			st.executeUpdate("create table employee(id int, name varchar(32), salary int)");
 			
 			System.out.println("Table Created successfully");
+			con.close();
 	 }
 	 catch(Exception e) 
 	 {

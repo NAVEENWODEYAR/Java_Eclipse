@@ -11,7 +11,7 @@ public class InsertData_Ex {
 		// Loading the driver
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		// Establishing the connection
-		Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/sakila", "root", "boss");
+		Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/javadb", "root", "boss");
 		//Create statement
 		Statement st = c.createStatement();
 			st.executeUpdate("insert into employee values (1,'Vasu',95123)");
@@ -19,6 +19,7 @@ public class InsertData_Ex {
 			st.executeUpdate("insert into employee values (3,'Ramu',65123)");
 		
 		System.out.println("Data inserted successfully");
+			c.close();
 	}
 
 }

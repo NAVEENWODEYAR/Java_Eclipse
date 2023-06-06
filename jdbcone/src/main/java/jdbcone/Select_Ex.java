@@ -12,7 +12,7 @@ public class Select_Ex
 	{
 		// Select Query
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		Connection co = DriverManager.getConnection("jdbc:mysql://localhost:3306/sakila","root","boss");
+		Connection co = DriverManager.getConnection("jdbc:mysql://localhost:3306/javadb","root","boss");
 		Statement st = co.createStatement();
 			ResultSet rs = st.executeQuery("select * from employee");
 			while(rs.next())
@@ -21,6 +21,7 @@ public class Select_Ex
 				String name = rs.getString("name");
 				int sal = rs.getInt("salary");
 				System.out.println("Employee id-"+ id + " Name-"+name+" Salary-"+sal);
+//				co.close();
 			}
 	}
 

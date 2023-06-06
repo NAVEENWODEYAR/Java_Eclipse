@@ -1,7 +1,6 @@
 package com.java.optionalClass;
 
 import java.util.Optional;
-
 public class Optional_Ex 
 {
 
@@ -16,6 +15,7 @@ public class Optional_Ex
 			{
 				System.out.println(a);
 			}
+			
 		
 
 	}

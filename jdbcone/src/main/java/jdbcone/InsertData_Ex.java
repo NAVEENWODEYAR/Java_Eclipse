@@ -17,6 +17,7 @@ public class InsertData_Ex {
 			st.executeUpdate("insert into employee values (1,'Vasu',95123)");
 			st.executeUpdate("insert into employee values (2,'Balu',75123)");
 			st.executeUpdate("insert into employee values (3,'Ramu',65123)");
+			st.executeUpdate("insert into employee values (4,'Fanny',34123)");
 		
 		System.out.println("Data inserted successfully");
 			c.close();

@@ -20,7 +20,7 @@ public class Select_Ex
 				int id = rs.getInt("id");
 				String name = rs.getString("name");
 				int sal = rs.getInt("salary");
-				System.out.println("Employee id-"+ id + " Name-"+name+" Salary-"+sal);
+				System.out.println("Employee Id-"+ id + " Name-"+name+" Salary-"+sal);
 //				co.close();
 			}
 	}

@@ -21,7 +21,7 @@ public class Test {
 			
 			System.out.println("Table Created Successfully");
 			
-			// 4. Close the connection
+			// 4. Close the connection..,
 			con.close();
 	 }
 	 catch(Exception e) 

@@ -19,6 +19,10 @@ public class InsertData_Ex {
 			st.executeUpdate("insert into employee values (3,'Ramu',65123)");
 			st.executeUpdate("insert into employee values (4,'Fanny',34123)");
 			st.executeUpdate("insert into employee values (5,'Emma',94123)");
+			st.executeUpdate("insert into employee values (6,'Florence',84123)");
+			st.executeUpdate("insert into employee values (7,'Gene',74123)");
+			st.executeUpdate("insert into employee values (8,'Helen',34123)");
+			st.executeUpdate("insert into employee values (9,'Ian',97123)");
 		
 		System.out.println("Data inserted successfully");
 			c.close();

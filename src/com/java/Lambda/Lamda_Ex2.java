@@ -9,7 +9,7 @@ public class Lamda_Ex2 {
 	public static void main(String[] args) {
 		// interface method implementation
 		Lambda_Ex2 l = (a,b) -> {
-				System.out.println("Lambda Expression");
+				System.out.println("Lambda Expression..,");
 				System.out.println("Sum of the given numbers: "+ (a+b));
 				return a;
 		};

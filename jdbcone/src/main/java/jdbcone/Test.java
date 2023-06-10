@@ -17,7 +17,7 @@ public class Test {
 			// 3. Create the statement
 			Statement st=con.createStatement();
 			
-			st.executeUpdate("create table employee(id int, name varchar(32), salary int)");
+			st.executeUpdate("create table employe(id int, name varchar(32), salary int,email varchar(30))");
 			
 			System.out.println("Table Created Successfully");
 			

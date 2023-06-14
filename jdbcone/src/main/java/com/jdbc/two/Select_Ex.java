@@ -10,9 +10,9 @@ public class Select_Ex
 
 	public static void main(String[] args) throws Exception 
 	{
-		// Reading the data from the database
+		// Reading the data from the database..,
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		Connection cn = DriverManager.getConnection("jdbc:mysql:4//localhost:3306/javadb","root","boss");
+		Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/javadb","root","boss");
 		Statement st = cn.createStatement();
 			ResultSet rs = st.executeQuery("select * from student");
 				while(rs.next())

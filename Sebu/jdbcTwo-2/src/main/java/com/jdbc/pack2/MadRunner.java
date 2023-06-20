@@ -18,9 +18,18 @@ public class MadRunner implements CommandLineRunner
 		public void run(String... args) throws Exception 
 		{
 			// invoking the methods..,
+			// 1. create the table.,,
+			tb.createTable();
+			
+			// 2. insert the values.,
 			tb.insertData();
+			
+			// 3. select the data.,
 			List l = tb.getData();
 				l.forEach(s -> System.out.println(s));
+			
+			// 4. delete the records.,
+				tb.deleteRow();
 		}
 
 }

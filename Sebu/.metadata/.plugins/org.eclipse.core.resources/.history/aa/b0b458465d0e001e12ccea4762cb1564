@@ -1,0 +1,10 @@
+package com.example.demo;
+
+
+public class TodayConfig 
+{
+	public char disp()
+	{
+		return 'GM';
+	}
+}

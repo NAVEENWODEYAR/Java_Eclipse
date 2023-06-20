@@ -1,0 +1,24 @@
+package dao;
+
+import java.util.List;
+
+import org.springframework.boot.autoconfigure.batch.BatchProperties.Jdbc;
+
+public class Table_Impl implements Table_Ex 
+{
+	Jdbc Template jt;
+	@Override
+	public void insertData() 
+	{
+
+		
+	}
+
+	@Override
+	public List getData()
+	{
+		
+		return null;
+	}
+
+}

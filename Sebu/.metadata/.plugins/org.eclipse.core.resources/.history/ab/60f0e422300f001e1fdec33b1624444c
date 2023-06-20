@@ -1,0 +1,24 @@
+package com.jdbc.runner;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+
+
+
+public class MyRunner implements CommandLineRunner {
+	// spring creates the object
+		@Autowired
+		Tabl_Impl tbl;
+		
+		@Override
+		public void run(String... args) throws Exception 
+		{
+		// runner class 
+			tbl.insertData();
+			List l = tbl.getData();
+			l.forEach(e-> System.out.println(e));
+		}
+
+}

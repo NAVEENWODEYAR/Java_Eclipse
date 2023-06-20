@@ -1,0 +1,12 @@
+package com.example.demo;
+
+import org.springframework.boot.SpringApplication;
+
+public class Test extends SpringApplication {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

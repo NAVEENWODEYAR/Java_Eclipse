@@ -1,0 +1,10 @@
+package com.example.demo;
+
+public class HloCnfg 
+{
+	public String hlo()
+	{
+		return "Welcome to springBoot..,";
+	}
+
+}

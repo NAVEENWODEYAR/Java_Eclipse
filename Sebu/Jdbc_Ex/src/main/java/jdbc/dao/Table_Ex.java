@@ -1,0 +1,9 @@
+package jdbc.dao;
+
+import java.util.List;
+
+public interface Table_Ex 
+{
+	void insertData();
+	List getData();
+}

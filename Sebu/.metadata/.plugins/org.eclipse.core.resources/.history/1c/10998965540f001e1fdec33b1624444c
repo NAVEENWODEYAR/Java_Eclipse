@@ -1,0 +1,19 @@
+package com.pack2;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+
+import com.pack1.Tbl_Cls;
+
+public class MadRunner implements CommandLineRunner 
+{
+	@Autowired
+	Tbl_Cls tb;
+	
+		@Override
+		public void run(String... args) throws Exception 
+		{
+			// invoking the methods..,
+		}
+
+}

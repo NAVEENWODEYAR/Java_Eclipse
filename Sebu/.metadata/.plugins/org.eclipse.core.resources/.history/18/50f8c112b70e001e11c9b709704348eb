@@ -1,0 +1,27 @@
+package dao;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class Table_Impl implements Table_Ex 
+{
+	@Autowired
+	Jdbc Template jt;
+	@Override
+	public void insertData() 
+	{
+
+		
+	}
+
+	@Override
+	public List getData()
+	{
+		
+		return null;
+	}
+
+}

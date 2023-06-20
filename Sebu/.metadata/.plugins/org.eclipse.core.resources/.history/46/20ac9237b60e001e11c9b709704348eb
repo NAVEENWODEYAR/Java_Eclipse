@@ -1,0 +1,7 @@
+package runner;
+
+import org.springframework.boot.CommandLineRunner;
+
+public class Runr_Ex implements CommandLineRunner {
+
+}

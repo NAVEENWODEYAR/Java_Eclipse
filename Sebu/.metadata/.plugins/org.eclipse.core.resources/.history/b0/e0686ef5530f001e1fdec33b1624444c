@@ -1,0 +1,27 @@
+package com.pack1;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public class Tbl_Cls implements Tbl 
+{
+	@Autowired
+	JdbcTemplate jd;
+	
+		@Override
+		public void insertData() 
+		{
+			// insert query
+			jd.update("insert into student values(100, 'Jennie',10, 'A')");
+		}
+	
+		@Override
+		public List getData()
+		{
+			// select query
+			return jd.queryForList("Select * from stuent");
+		}
+
+}

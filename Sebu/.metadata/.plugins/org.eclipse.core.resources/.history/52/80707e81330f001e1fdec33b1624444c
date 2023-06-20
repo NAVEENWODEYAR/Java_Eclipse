@@ -1,0 +1,19 @@
+package com.jdbc.runner;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import com.jdbc.dao.Tabl_Class;
+
+public class BeanRunner implements CommandLineRunner 
+{
+	@Autowired
+	Tabl_Class tbl;
+	
+	@Override
+	public void run(String... args) throws Exception 
+	{
+	
+		
+	}
+
+}

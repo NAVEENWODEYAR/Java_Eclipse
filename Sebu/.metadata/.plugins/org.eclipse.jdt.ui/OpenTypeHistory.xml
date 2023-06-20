@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=Hello-2/C:\/Users\/LENOVO\/.m2\/repository\/org\/springframework\/boot\/spring-boot\/3.1.0\/spring-boot-3.1.0.jar=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.boot=/=/maven.artifactId=/spring-boot=/=/maven.version=/3.1.0=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.springframework.boot(SpringApplication.class[SpringApplication" modifiers="33" timestamp="1686932238207"/>
+    <typeInfo handle="=Jdbc_Ex/C:\/Users\/LENOVO\/.gradle\/caches\/modules-2\/files-2.1\/org.springframework.boot\/spring-boot\/3.1.0\/efa941e9a2162a3dd8c5e4679f46a24af9e5769f\/spring-boot-3.1.0.jar=/gradle_used_by_scope=/main,test=/&lt;org.springframework.boot(CommandLineRunner.class[CommandLineRunner" modifiers="1537" timestamp="1687186224939"/>
+    <typeInfo handle="=jdbcTwo/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.jdbc.Dao{DaoInterface.java[DaoInterface" modifiers="513" timestamp="1687240859364"/>
+    <typeInfo handle="=jdbcTwo-1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.jdbc.dao{Tabl_Interface.java[Tabl_Interface" modifiers="513" timestamp="1687242043038"/>
+    <typeInfo handle="=jdbcTwo-1/C:\/Users\/LENOVO\/.m2\/repository\/org\/springframework\/boot\/spring-boot\/3.1.0\/spring-boot-3.1.0.jar=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.boot=/=/maven.artifactId=/spring-boot=/=/maven.version=/3.1.0=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.springframework.boot(CommandLineRunner.class[CommandLineRunner" modifiers="1537" timestamp="1686932238207"/>
+</typeInfoHistroy>

@@ -1,0 +1,28 @@
+package dao;
+
+import java.util.List;
+
+public class Table_Impl implements Table_Ex 
+{
+
+	public static void main(String[] args) 
+	{
+
+
+	}
+
+	@Override
+	public void insertData() 
+	{
+
+		
+	}
+
+	@Override
+	public List getData()
+	{
+		
+		return null;
+	}
+
+}

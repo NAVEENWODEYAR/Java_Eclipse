@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 import com.jdbc.pack1.Tbl_Cls;
 
-@Component
+
 public class MadRunner implements CommandLineRunner 
 {
 	@Autowired

@@ -21,6 +21,9 @@ public class MadRunner implements CommandLineRunner
 			// 1. create the table.,,
 			tb.createTable();
 			
+			// rename the table..,
+			tb.renameTable();
+			
 			// 2. insert the values.,
 			tb.insertData();
 			

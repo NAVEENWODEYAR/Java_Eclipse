@@ -28,7 +28,7 @@ public class EmployeeService
 		return eRepo.findAll();
 	}
 	
-	// 3. update query.,
+	// 3. update query..,
 	public Employee updateData(int Id, Employee emp)
 	{
 		Employee emp1 = eRepo.findById(Id).get();
@@ -41,10 +41,10 @@ public class EmployeeService
 				return eRepo.save(emp1);
 	}
 	
-	// 4. delete query.,
+	// 4. delete query..,
 	public String deleteData(int Id)
 	{
 		eRepo.deleteById(Id);
 		return " ";
-	}
+	}	
 }

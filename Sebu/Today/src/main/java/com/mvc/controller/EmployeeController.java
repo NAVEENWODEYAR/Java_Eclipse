@@ -20,7 +20,7 @@ public class EmployeeController
 	@Autowired
 	EmployeeService eService;
 	
-	// generating the API.,
+	// generating the API's.,
 	
 	// 1. post for sending the data.,
 	@PostMapping("/insertRow")
@@ -37,7 +37,7 @@ public class EmployeeController
 		return eService.getData();
 	}
 	
-	// 2. put for updating the data.,
+	// 3. put for updating the data.,
 	@PutMapping("/updateRow/{Id}")
 	public Employee updateData(@PathVariable int Id,@RequestBody Employee emp)
 	{

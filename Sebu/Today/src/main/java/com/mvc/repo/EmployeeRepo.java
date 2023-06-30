@@ -8,5 +8,5 @@ import com.mvc.modal.Employee;
 @Repository
 public interface EmployeeRepo extends JpaRepository<Employee,Integer>
 {
- // repository extends JpaRepository.,
+ // repository extends JpaRepository-> CRUD repository.,
 }

@@ -3,6 +3,7 @@ package com.mango.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -23,5 +24,13 @@ public class GrapeController
 	public Grape insertGrapeData(@RequestBody Grape gp)
 	{
 		return gService.insertGrapeData(gp);
+	}
+	
+	// 2. get for receiving the data,,
+	@GetMapping("/getGrapeData")
+	public List<Grape> getGrapeData(List<Grape> gp)
+	{
+		List<Grape> g1 = gService.getGrapeData(gp);
+					return g1;
 	}
 }

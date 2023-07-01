@@ -10,7 +10,7 @@ public class LambdaEx1 implements Test
 {
 	public int square (int a)
 	{
-		System.out.println("Implementation of the interface method..,");
+		System.out.println("Implementation of the interface method.,");
 		return a*a;
 	}
 	public static void main(String args[])

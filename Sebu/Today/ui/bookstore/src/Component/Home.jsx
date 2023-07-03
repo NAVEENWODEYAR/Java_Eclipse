@@ -4,8 +4,6 @@ export default function Home() {
 
     // useState for state management in the functional component.,
     const[company,setCompany] = useState([]);
-    {Array.isArray(company)}
-
 
     // useEffect to load the page.,
     useEffect (()=> {
@@ -35,21 +33,21 @@ export default function Home() {
         </thead>
         <tbody>
             {
-                // Object.keys(company).map((company)=>
-                company.map((company,index)=>
+            Object.keys(company).length > 0 ?
+            <>
                 {
-                    <tr>
-                    <th scope="row" key={index}>{index+1}</th>
-                    <td>ohkjsa</td>
-                    <td>{company.c_Id}</td>
-                    <td>{company.c_Name}</td>
-                    <td>{company.c_Name}</td>
-                    <td>{company.c_Address}</td>
-                    <td>{company.c_Website}</td>
-                    </tr>
-                })
-              
-              
+                    company.map((com)=>{
+                        return <tr>
+                            {/* <th scope="row" key={index}> {index+1}</th> */}
+                            <td>{com.c_Id}</td>
+                            <td>{com.c_Name}</td>
+                            <td>{com.c_Address}</td>
+                            <td>{com.c_Type}</td>
+                            <td>{com.c_Website}</td>
+                        </tr>
+                    })
+                }
+            </>: null
             }
            
             

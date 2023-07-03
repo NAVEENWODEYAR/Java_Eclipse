@@ -22,7 +22,7 @@ public class GrapeService
 			return g1;
 	}
 	
-	// 2. select the data, db.collection.find()
+	// 2. select the data, db.collection.find().pretty().,
 	public List<Grape> getGrapeData(List<Grape> gp)
 	{
 		return gRepo.findAll();

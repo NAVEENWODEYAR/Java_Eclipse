@@ -5,7 +5,7 @@ public class Test1
 
 	public static void main(String[] args) 
 	{
-	// testing the toString()
+	// testing the toString() of the Object class
 		System.out.println(new Test1());
 
 	}

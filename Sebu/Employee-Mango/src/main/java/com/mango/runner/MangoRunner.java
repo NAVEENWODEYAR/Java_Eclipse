@@ -17,9 +17,11 @@ public class MangoRunner implements CommandLineRunner
 	public void run(String... args) throws Exception 
 	{
 		mService.insertMangoData(new Mango(1,"Alphonso","Devgad",23.00));
-		mService.insertMangoData(new Mango(1,"Banganapalle","",27.00));
-		mService.insertMangoData(new Mango(1,"Langra","Varanasi",83.00));
-		mService.insertMangoData(new Mango(1,"Totapuri","South India",93.00));
+		mService.insertMangoData(new Mango(6,"Banganapalle","",27.00));
+		mService.insertMangoData(new Mango(4,"Langra","Varanasi",83.00));
+		mService.insertMangoData(new Mango(7,"Totapuri","South India",93.00));
+		mService.insertMangoData(new Mango(9,"Berry","South India",93.00));
+
 		
 		
 	}

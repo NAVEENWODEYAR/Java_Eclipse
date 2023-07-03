@@ -16,7 +16,7 @@ public class MangoService
 	MangoRepo mRepo;
 	
 	// CRUD operations.,
-	// insert the data.,
+	// insert an single row.,
 	public Mango insertMangoData(Mango mg)
 	{
 		Mango lt = mRepo.save(mg);

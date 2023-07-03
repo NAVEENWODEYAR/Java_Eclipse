@@ -38,7 +38,7 @@ public class CompanyService
 				c1.setC_Type(cmp.getC_Type());
 				c1.setC_Website(cmp.getC_Website());
 				
-				return c1;		
+				return cRepo.save(c1);		
 	}
 	
 	// 4. deleting the data.,

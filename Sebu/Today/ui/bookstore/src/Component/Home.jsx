@@ -44,6 +44,12 @@ export default function Home() {
                             <td>{com.c_Address}</td>
                             <td>{com.c_Type}</td>
                             <td>{com.c_Website}</td>
+
+                                <td>
+                                    <button className='btn btn-primary mx-2'> Add  </button>
+                                    <button className='btn btn-outline-warning mx-2'> Update  </button>
+                                    <button className='btn btn-danger mx-2'> Delete  </button>
+                                </td>
                         </tr>
                     })
                 }

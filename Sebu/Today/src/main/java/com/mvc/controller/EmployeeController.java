@@ -1,6 +1,11 @@
 package com.mvc.controller;
 
+import com.mvc.dto.*;
 import java.util.List;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
+import org.springframework.http.ResponseEntity;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -24,10 +29,11 @@ public class EmployeeController
 	
 	// 1. post for sending the data.,
 	@PostMapping("/insertRow")
-	public List<Employee> insertData(@RequestBody List<Employee> emp)
+	public ResponseEntity<EmployeeDTO> insertData(@RequestBody List<Employee> emp)
 	{
 		List<Employee> lt = eService.insertData(emp);
-		return lt;
+		EmployeeDTO eDto = new EmployeeDTO("Data inserted..,",lt);
+		return new ResponseEntity<>(eDto,HttpStatus.ACCEPTED);
 	}
 	
 	// 2. get for receiving the data.,

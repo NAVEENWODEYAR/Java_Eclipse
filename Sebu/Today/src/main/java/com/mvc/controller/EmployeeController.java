@@ -38,9 +38,12 @@ public class EmployeeController
 	
 	// 2. get for receiving the data.,
 	@GetMapping("/getRow")
-	public List<Employee> getData()
-	{
-		return eService.getData();
+//	public List<Employee> getData()
+	public ResponseEntity<EmployeeDTO> getData()
+	{	
+		List<Employee> lt = eService.getData();
+		EmployeeDTO eDto = new EmployeeDTO("Getting the data.,",lt);
+		return new ResponseEntity<>(eDto,HttpStatus.FOUND);
 	}
 	
 	// 3. put for updating the data.,

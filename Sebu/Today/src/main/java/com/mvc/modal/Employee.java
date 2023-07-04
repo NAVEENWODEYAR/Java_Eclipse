@@ -1,6 +1,8 @@
 package com.mvc.modal;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
@@ -10,6 +12,7 @@ public class Employee
 {
 	// table column Id,,
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int eId;
 	private int age;
 	private String eName;

@@ -10,7 +10,7 @@ export default function Home() {
         companyData();
     },[])
 
-     // method for loding the details,
+     // method for loding the details, getting the data from the database using the API
     const companyData =async () => {
         const dat =await axios.get("http://localhost:8080/getCompanyData")
         console.log(dat);

@@ -32,12 +32,11 @@ let emp = [
       }
 ]
 
-let e =    {
+let e =    [{
     firstName: "John",
     lastName: "Doe",
     age: 50,
     eyeColor: "blue"
-  }
-console.log(emp);
+  }]
 
-Object.entries(e).map(e=>console.log(e));
+Object.values(e).map(e=>console.log(e));

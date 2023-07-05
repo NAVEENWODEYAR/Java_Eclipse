@@ -11,8 +11,8 @@ export default function Home() {
     },[])
 
      // method for loding the details, getting the data from the database using the API
-    const companyData =async () => {
-        const dat =await axios.get("http://localhost:8080/getCompanyData")
+    const companyData = async () => {
+        const dat = await axios.get("http://localhost:8080/getCompanyData")
         console.log(dat);
         setCompany(dat.data);
     }
@@ -36,7 +36,7 @@ export default function Home() {
             Object.keys(company).length > 0 ?
             <>
                 {
-                    company.map((com)=>{
+                   Object.entries(company).map((com)=>{
                         return <tr>
                             {/* <th scope="row" key={index}> {index+1}</th> */}
                             <td>{com.c_Id}</td>

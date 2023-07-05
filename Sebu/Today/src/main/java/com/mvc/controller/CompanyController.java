@@ -43,7 +43,7 @@ public class CompanyController
 	
 	{
 		List<Company> lt = cService.getCompanyData();
-		ResponseDTO cDTO = new ResponseDTO("Getting the data..,",lt);
+		ResponseDTO cDTO = new ResponseDTO("select * from company,",lt);
 		return new ResponseEntity<>(cDTO,HttpStatus.ACCEPTED);
 	}
 	

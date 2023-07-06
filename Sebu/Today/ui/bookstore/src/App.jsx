@@ -11,6 +11,7 @@ class App extends Component
     return(
       <>
         <Navbar/>
+        <hr />
         <Home/>
       </>
     );

@@ -10,7 +10,8 @@ public class TodayApplication
 	public static void main(String[] args) 
 	{
 		SpringApplication.run(TodayApplication.class, args);
-		System.out.println("PaniPuri started..,");
+		System.out.println("PaniPuri started.,");
 	}
 
 }
+ 

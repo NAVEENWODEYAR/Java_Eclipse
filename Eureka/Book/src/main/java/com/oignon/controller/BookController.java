@@ -32,7 +32,7 @@ public class BookController
 		}
 		
 		// 2. send the data.,
-		@PostMapping("/insertBook")
+		@PostMapping("/insertBooks")
 		public List<Book> insertBooks(@RequestBody List<Book> book)
 		{
 			List<Book> book1 = bookService.insertBooks(book);

@@ -47,7 +47,13 @@ public class BookService
 		public Book updateBook(Integer bId, Book book)
 		{
 			Book book1 = bookRepo.findById(bId).get();
-				book1.s
+				book1.setBName(book.getBName());
+				book1.setBPrice(book.getBPrice());
+				book1.setBType(book.getBType());
+				book1.setBAuthor(book.getBAuthor());
+				book1.setAMail(book.getAMail());
+				
+				return bookRepo.save(book1);		
 		}
 
 		// 6. delete data from table

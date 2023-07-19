@@ -1,6 +1,7 @@
 package com.oignon.coding;
 
 import java.util.HashMap;
+import java.util.TreeMap;
 
 public class HashMp1 
 {
@@ -19,6 +20,12 @@ public class HashMp1
 								{
 									System.out.println(o);
 								}
+	
+			TreeMap<Integer, String> tm = new TreeMap();
+					for(int i=0; i<= hm.size(); i++)
+					{
+					}
+						
 	}
 
 }

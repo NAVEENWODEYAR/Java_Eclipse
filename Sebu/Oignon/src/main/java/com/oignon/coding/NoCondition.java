@@ -9,11 +9,11 @@ public class NoCondition
 {
 	public static void main(String[] args)
 	{
-		for(int i = 0; 0; i++)
-		{
-			System.out.println("Print");
-		}
-		
+//		for(int i = 0; 0; i++)
+//		{
+//			System.out.println("Print");
+//		}
+//		
 	}
 
 }

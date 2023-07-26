@@ -24,7 +24,7 @@ public class BookController
 	BookService bookService;
 		
 		// REST API
-		// 1. send the record.,
+		// 1. send the record.,  http://localhost:8081/insertBook
 		@PostMapping("/insertBook")
 		public Book insertBook(@RequestBody Book book)
 		{

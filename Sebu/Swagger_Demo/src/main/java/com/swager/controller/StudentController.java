@@ -25,6 +25,7 @@ public class StudentController
 	
 	// REST API's.,
 	// 1.post for sending the data.,
+	// http://localhost:9876/swager/insertStudents
 	@PostMapping("/insertStudents")
 	public List<Student> insertStudets(@RequestBody List<Student> st)
 	{
@@ -33,6 +34,7 @@ public class StudentController
 	}
 	
 	// 2. get for receiving the data.,
+	//http://localhost:9876/swager/getStudents
 	@GetMapping("/getStudents")
 	public List<Student> getStudents()
 	{
@@ -40,6 +42,7 @@ public class StudentController
 	}
 	
 	// 3. put for updating the data.,
+	//http://localhost:9876/swager/updateStudent/
 	@PutMapping("/updateStudent/{stId}")
 	public Student updateStudent(@RequestBody Student st, @PathVariable Integer stId)
 	{
@@ -47,6 +50,7 @@ public class StudentController
 	}
 	
 	// 4. delete for deleting the record.,
+	//http://localhost:9876/swager/deleteStudent/
 	@DeleteMapping("/deleteStudent/{stId}")
 	public String deleteStudent(@PathVariable Integer stId)
 	{

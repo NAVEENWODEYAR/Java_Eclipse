@@ -26,6 +26,7 @@ public class StudentController
 	// REST API's.,
 	// 1.post for sending the data.,
 	// http://localhost:9876/swager/insertStudents
+	
 	@PostMapping("/insertStudents")
 	public List<Student> insertStudets(@RequestBody List<Student> st)
 	{

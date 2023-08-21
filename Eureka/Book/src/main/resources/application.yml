@@ -1,3 +1,5 @@
+# Eureka client configuration
+
 server:
   port: 8081
   

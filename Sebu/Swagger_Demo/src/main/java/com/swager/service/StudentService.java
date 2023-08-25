@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
+import com.swager.dto.StudentDTO;
 import com.swager.modal.Student;
 import com.swager.repo.StudentRepo;
 
@@ -17,10 +18,10 @@ public class StudentService
 	
 	// CRUD operations.,
 	// 1. insert the data into the database.,
-	public List<Student> insertStudent(List<Student> st)
+	public Student insertStudent(StudentDTO studentDTO)
 	{
-		List<Student> st1 = studentRepo.saveAll(st);
-		return st1;
+		Student st = new Student(studentDTO);
+		return studentRepo.save(st);
 	}
 	
 	// 2. select the data.,
@@ -30,12 +31,12 @@ public class StudentService
 	}
 	
 	// 3. update the student.,
-	public Student updateStudent(Student st, Integer stId)
+	public Student updateStudent(StudentDTO studentDTO, Integer stId)
 	{
 		Student st1 = studentRepo.findById(stId).get();
-				st1.setStName(st.getStName());
-				st1.setStClass(st.getStClass());
-				st1.setStMarks(st.getStMarks());
+				st1.setStName(studentDTO.getStName());
+				st1.setStClass(studentDTO.getStClass());
+				st1.setStMarks(studentDTO.getStMarks());
 				
 				return studentRepo.save(st1);
 	}

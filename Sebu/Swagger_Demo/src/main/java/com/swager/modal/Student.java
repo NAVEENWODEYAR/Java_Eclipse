@@ -10,6 +10,8 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.Type;
 
+import com.swager.dto.StudentDTO;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -31,4 +33,12 @@ public class Student
 	private String stName;
 	private String stClass;
 	private double stMarks;
-}
+	
+		// DTO object for transfering the data,
+		public Student(StudentDTO studentDTO)
+		{
+			this.stName = studentDTO.getStName();
+			this.stClass = studentDTO.getStClass();
+			this.stMarks = studentDTO.getStMarks();
+		}
+	}

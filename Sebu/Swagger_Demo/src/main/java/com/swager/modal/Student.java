@@ -27,7 +27,7 @@ public class Student
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int stId;
 	
-	@Type(type = "uuid-char")
+//	@Type(type = "uuid-char")
 	private UUID regNumber = UUID.randomUUID();
 	
 	private String stName;

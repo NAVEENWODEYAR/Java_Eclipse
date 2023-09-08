@@ -1,2 +1,3 @@
 #Production Development configurations
-server.port
+server:
+  port: 1

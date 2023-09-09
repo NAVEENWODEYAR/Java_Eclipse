@@ -5,12 +5,14 @@ import java.util.List;
 
 import jakarta.persistence.*;
 import lombok.*;
+import lombok.extern.slf4j.Slf4j;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
 @Table(name = "map_Student")
+@Slf4j
 public class Student 
 {
 	@Id
@@ -30,6 +32,5 @@ public class Student
 	@OneToMany(cascade = CascadeType.ALL)
 	@JoinColumn(name = "pc_fid",referencedColumnName = "addressId")
 	private List<Address> address = new ArrayList<>();
-	
 	
 }

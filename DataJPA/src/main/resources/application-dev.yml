@@ -1,6 +1,6 @@
 # Development Environment configuraions
 server:
-  port: 2
+  port: 1234
   
 spring:
   datasource:
@@ -10,7 +10,7 @@ spring:
     password: boss
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
     show-sql: true
     generate-ddl: true
     

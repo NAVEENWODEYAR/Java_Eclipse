@@ -16,13 +16,8 @@ public class Address
 {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int stId;
+	private int addressId;
 	
-	private int houseNumber;
-	private String houseName;
-	private String placeName;
-	private String city;
-	private String country;
-	private double postalCode;
-	private double phoneNumber;
+	private String address;
+
 }

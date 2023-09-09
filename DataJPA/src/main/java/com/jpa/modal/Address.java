@@ -1,6 +1,9 @@
 package com.jpa.modal;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.*;
 
@@ -11,7 +14,10 @@ import lombok.*;
 @Table(name = "map_Address")
 public class Address 
 {
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int addressId;
+	
 	private int houseNumber;
 	private String houseName;
 	private String placeName;

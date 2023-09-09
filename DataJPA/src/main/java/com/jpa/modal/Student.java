@@ -12,7 +12,6 @@ import lombok.extern.slf4j.Slf4j;
 @NoArgsConstructor
 @Entity
 @Table(name = "map_Student")
-@Slf4j
 public class Student 
 {
 	@Id

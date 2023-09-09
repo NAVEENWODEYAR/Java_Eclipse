@@ -1,5 +1,8 @@
 package com.jpa.modal;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -23,6 +26,10 @@ public class Student
 	
 	@Column(name = "Student Mail Id")
 	private String stMail;
+	
+	@OneToMany(cascade = CascadeType.ALL)
+	@JoinColumn
+	private List<Address> address = new ArrayList<>();
 	
 	
 }

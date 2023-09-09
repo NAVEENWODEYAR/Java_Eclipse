@@ -14,8 +14,8 @@ public class SecurityConfig
         http
                 .csrf().disable()
                 .authorizeHttpRequests()
-                .requestMatchers("/car/test").permitAll()
-                .requestMatchers("/car").authenticated()
+                .requestMatchers("/student/testMsg").permitAll()
+                .requestMatchers("/student").authenticated()
                 .requestMatchers("/swagger-ui.html","/swagger-ui/index.html","/swagger-resources/**", "/v2/api-docs").permitAll()
                 .and().formLogin()
                 .and().httpBasic();

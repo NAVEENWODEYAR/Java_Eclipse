@@ -1,10 +1,15 @@
 package com.jpa.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.jpa.modal.Student;
 import com.jpa.service.StudentService;
 
 @RestController
@@ -20,5 +25,18 @@ public class StudentController
 	public String testMsg()
 	{
 		return "Mapping in JPA,";
+	}
+	
+	@PostMapping("/insertStudent")
+	public Student insertStudent(@RequestBody Student student)
+	{
+		return studentService.insertStudent(student);
+	}
+	
+	@GetMapping("/getStudents")
+	public List<Student> getStudents()
+	{
+		List<Student> students = studentService.getStudents();
+		return students;
 	}
 }

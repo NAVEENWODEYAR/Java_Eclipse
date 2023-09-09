@@ -1,6 +1,5 @@
 package com.jpa.modal;
 
-import java.util.UUID;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -17,9 +16,8 @@ import lombok.NoArgsConstructor;
 public class Student 
 {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int stId;
-	private UUID stSSN = UUID.randomUUID();
+	private int stSSN;
 	private String stName;
 	private String stClass;
 	private String stAddress;

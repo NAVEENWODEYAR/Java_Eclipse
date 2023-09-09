@@ -20,10 +20,7 @@ public class Student
 	
 	@Column(name = "Student Name")
 	private String stName;
-	
-	@Column(name = "Student Address")
-	private String stAddress;
-	
+		
 	@Column(name = "Student Mail Id")
 	private String stMail;
 	

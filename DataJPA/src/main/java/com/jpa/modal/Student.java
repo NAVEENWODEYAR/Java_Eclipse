@@ -28,7 +28,7 @@ public class Student
 	private String stMail;
 	
 	@OneToMany(cascade = CascadeType.ALL)
-	@JoinColumn
+	@JoinColumn(name = "pc_fid",referencedColumnName = "addressId")
 	private List<Address> address = new ArrayList<>();
 	
 	

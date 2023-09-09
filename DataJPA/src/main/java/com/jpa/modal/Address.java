@@ -11,6 +11,7 @@ import lombok.*;
 @Table(name = "map_Address")
 public class Address 
 {
+	private int addressId;
 	private int houseNumber;
 	private String houseName;
 	private String placeName;

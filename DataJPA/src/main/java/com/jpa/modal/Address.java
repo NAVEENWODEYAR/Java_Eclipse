@@ -20,6 +20,8 @@ public class Address
 	@Column(name = "addressId")
 	private int addressId;
 	
+	private int houseNumber;
+	private String houseName;
 	private String address;
 
 }

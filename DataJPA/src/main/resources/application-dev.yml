@@ -1,3 +1,5 @@
 # Development Environment configuraions
 server:
   port: 2
+  
+spring.datasource

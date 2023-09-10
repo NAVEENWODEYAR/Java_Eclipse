@@ -20,18 +20,17 @@ public class Student
 	@Column(name = "Student Id")
 	private int stId;
 	
-	@Column(name = "First Name")
-	@NotBlank
+	@Column(name = "First Name",nullable = false)
 	private String fName;
 	
-	@Column(name = "Last name")
+	@Column(name = "Last name",nullable = false)
 	private String lName;
 	
-	@Column(name = "Student Mail Id")
+	@Column(name = "Student Mail Id",nullable = false)
 	private String stMail;
 	
 	@OneToMany(cascade = CascadeType.ALL)
-	@JoinColumn(name = "addressId")
+	@JoinColumn(name = "addressId",nullable = false)
 	private List<Address> address = new ArrayList<>();
 	
 }

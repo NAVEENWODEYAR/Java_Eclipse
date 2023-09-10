@@ -15,6 +15,6 @@ public interface StudentRepo extends JpaRepository<Student, Integer>
 	Student findByFaNameAndLaName(String fName, String lName);
 
 	// JPQL queries
-	@Query(value = "SELECT * FROM map_Student ORDER BY map_student.First Name",nativeQuery = true)
+	@Query(value = "SELECT * FROM map_Student ORDER BY map_student.First Name DESC",nativeQuery = true)
 	List<Student> getStudentOrderByfirstName();
 }

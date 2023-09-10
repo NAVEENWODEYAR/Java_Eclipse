@@ -63,4 +63,10 @@ public class StudentController
 	{
 		return studentService.findByFirstNameAndLastname(faName, laName);
 	}
+	
+	@GetMapping("/getStudentsASC")
+	public List<Student> getStudentsASC()
+	{
+		return studentService.getStudentsASC();
+	}
 }

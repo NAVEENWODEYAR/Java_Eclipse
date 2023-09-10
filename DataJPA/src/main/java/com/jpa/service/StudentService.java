@@ -52,4 +52,11 @@ public class StudentService
 	{
 		return studentRepo.findByFaNameAndLaName(faName, laName);
 	}
+	
+	// JPQL queries,
+	// 1. ORDER By 
+	public List<Student> getStudentsASC()
+	{
+		return studentRepo.getStudentOrderByfirstName();
+	}
 }

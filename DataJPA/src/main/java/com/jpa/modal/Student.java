@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 
 @Data
@@ -18,9 +19,13 @@ public class Student
 	@Column(name = "Student Id")
 	private int stId;
 	
-	@Column(name = "Student Name")
-	private String stName;
-		
+	@Column(name = "First Name")
+	@NotBlank
+	private String fName;
+	
+	@Column(name = "Last name")
+	private String lName;
+	
 	@Column(name = "Student Mail Id")
 	private String stMail;
 	

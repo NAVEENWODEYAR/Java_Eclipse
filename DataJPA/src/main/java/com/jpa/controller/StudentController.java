@@ -39,4 +39,10 @@ public class StudentController
 		List<Student> students = studentService.getStudents();
 		return students;
 	}
+	
+	@GetMapping("/getByName")
+	public Student getByName(String fName)
+	{
+		return studentService.getByName(fName);
+	}
 }

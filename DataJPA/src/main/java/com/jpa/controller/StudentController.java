@@ -69,4 +69,10 @@ public class StudentController
 	{
 		return studentService.getStudentsASC();
 	}
+	
+	@GetMapping("/getStudentASCfirstName")
+	public List<Student> getStudentsASCFaname()
+	{
+		return studentService.getStudentsASCFaname();
+	}
 }

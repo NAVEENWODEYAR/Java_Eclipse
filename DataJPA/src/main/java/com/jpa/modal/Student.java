@@ -12,7 +12,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "map_Student",uniqueConstraints = @UniqueConstraint(columnNames = "stMail"))
+@Table(name = "map_Student",uniqueConstraints = @UniqueConstraint(columnNames = "Student Mail Id"))
 public class Student 
 {
 	@Id

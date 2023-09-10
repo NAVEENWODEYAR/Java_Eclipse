@@ -57,4 +57,10 @@ public class StudentController
 	{
 		return studentService.getBylNameNotNull();
 	}
+	
+	@GetMapping("/getByFirstName&LastName")
+	public Student findByFirstNameAndLastname(String faName, String laName)
+	{
+		return studentService.findByFirstNameAndLastname(faName, laName);
+	}
 }

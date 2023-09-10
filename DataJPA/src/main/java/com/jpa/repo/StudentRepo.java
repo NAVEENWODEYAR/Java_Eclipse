@@ -12,5 +12,5 @@ public interface StudentRepo extends JpaRepository<Student, Integer>
 	List<Student> findByfNameContaining(String name);
 	List<Student> findBylNameNotNull();
 //	Student findByfNameAndlName(String fName, String lName);
-	Student findByLName(String lName);
+	Student findBylName(String lName);
 }

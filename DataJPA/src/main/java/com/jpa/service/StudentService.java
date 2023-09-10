@@ -34,4 +34,10 @@ public class StudentService
 	{
 		return studentRepo.findByfName(fName);
 	}
+	
+	// 4. findByNameContaining
+	public List<Student> getByNameContainig(String name)
+	{
+		return studentRepo.findByfNameContaining(name);
+	}
 }

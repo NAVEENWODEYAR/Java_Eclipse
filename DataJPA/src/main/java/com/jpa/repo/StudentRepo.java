@@ -9,7 +9,7 @@ import com.jpa.modal.Student;
 public interface StudentRepo extends JpaRepository<Student, Integer> 
 {
 	Student findByfName(String fName);
-	List<Student> findByfNameContaining(String fName);
+	List<Student> findByfNameContaining(String name);
 //	List<Student> findBylNameNotnull();
 	
 }

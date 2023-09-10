@@ -45,4 +45,10 @@ public class StudentController
 	{
 		return studentService.getByName(fName);
 	}
+	
+	@GetMapping("/getByNameContainig")
+	public List<Student> getByNameContainig(String name)
+	{
+		return studentService.getByNameContainig(name);
+	}
 }

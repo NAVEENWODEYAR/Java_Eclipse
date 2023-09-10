@@ -10,7 +10,7 @@ spring:
     password: boss
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
     show-sql: true
     generate-ddl: true
   security:

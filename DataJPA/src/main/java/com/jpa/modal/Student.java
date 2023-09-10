@@ -12,7 +12,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "map_Student")
+@Table(name = "map_Student",notNu)
 public class Student 
 {
 	@Id
@@ -25,7 +25,6 @@ public class Student
 	private String fName;
 	
 	@Column(name = "Last name")
-	@NotNull
 	private String lName;
 	
 	@Column(name = "Student Mail Id")

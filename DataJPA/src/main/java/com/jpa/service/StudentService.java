@@ -29,4 +29,9 @@ public class StudentService
 		return students;
 	}
 	
+	// 3. findByFirstName
+	public Student getByName(String fName)
+	{
+		return studentRepo.findByFirstName(fName);
+	}
 }

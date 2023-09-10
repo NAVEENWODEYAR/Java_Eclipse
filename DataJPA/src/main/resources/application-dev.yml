@@ -1,6 +1,6 @@
 # Development Environment configuraions
 server:
-  port: 1
+  port: 1234
   
 spring:
   datasource:

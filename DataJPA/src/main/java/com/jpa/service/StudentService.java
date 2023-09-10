@@ -38,7 +38,7 @@ public class StudentService
 	// 4. findByNameContaining
 	public List<Student> getByNameContainig(String name)
 	{
-		return studentRepo.findByfNameContaining(name);
+		return studentRepo.findByFaNameContaining(name);
 	}
 	
 	// 5. findBylNameNotNull

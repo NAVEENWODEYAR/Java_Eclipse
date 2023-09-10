@@ -21,10 +21,10 @@ public class Student
 	private int stId;
 	
 	@Column(name = "First Name",nullable = false)
-	private String fName;
+	private String faName;
 	
 	@Column(name = "Last name",nullable = false)
-	private String lName;
+	private String laName;
 	
 	@Column(name = "Student Mail Id",nullable = false)
 	private String stMail;

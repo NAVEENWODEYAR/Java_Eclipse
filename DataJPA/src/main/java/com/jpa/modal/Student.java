@@ -30,7 +30,7 @@ public class Student
 	private String stMail;
 	
 	@OneToMany(cascade = CascadeType.ALL)
-	@JoinColumn(name = "addressId",nullable = false)
+	@JoinColumn(name = "addressId")
 	private List<Address> address = new ArrayList<>();
 	
 }

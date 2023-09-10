@@ -21,6 +21,6 @@ public interface StudentRepo extends JpaRepository<Student, Integer>
 //	@Query(value = "SELECT s FROM Student s WHERE s.Student MailId=?1")
 //	Student getStudent(String stMail);
 	
-	@Query(value = "SELECT * FROM Student s ORDER BY s.First Name ",nativeQuery = true)
+	@Query(value = "SELECT * FROM map_Student ORDER BY map_Student.First Name ",nativeQuery = true)
 	List<Student> getStudentsASCFaName();
 }

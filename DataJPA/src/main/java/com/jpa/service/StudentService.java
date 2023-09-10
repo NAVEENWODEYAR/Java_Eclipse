@@ -30,9 +30,9 @@ public class StudentService
 	}
 	
 	// 3. findByFirstName
-	public Student getByName(String fName)
+	public Student getByName(String faName)
 	{
-		return studentRepo.findByfName(fName);
+		return studentRepo.findByFaName(faName);
 	}
 	
 	// 4. findByNameContaining

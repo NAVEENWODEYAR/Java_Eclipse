@@ -40,4 +40,10 @@ public class StudentService
 	{
 		return studentRepo.findByfNameContaining(name);
 	}
+	
+	// 5. findBylNameNotNull
+	public List<Student> getBylNameNotNull()
+	{
+		return studentRepo.findBylNameNotNull();
+	}
 }

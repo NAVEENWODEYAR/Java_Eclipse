@@ -26,7 +26,7 @@ public class Student
 	@Column(name = "Last name",nullable = false)
 	private String laName;
 	
-	@Column(name = "Student Mail Id",nullable = false)
+	@Column(name = "Student MailId",nullable = false)
 	private String stMail;
 	
 	@OneToMany(cascade = CascadeType.ALL)

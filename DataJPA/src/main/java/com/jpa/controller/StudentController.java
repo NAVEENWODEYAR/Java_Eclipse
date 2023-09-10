@@ -51,4 +51,10 @@ public class StudentController
 	{
 		return studentService.getByNameContainig(name);
 	}
+	
+	@GetMapping("/getBylNameNotNull")
+	public List<Student> getBylNameNotNull()
+	{
+		return studentService.getBylNameNotNull();
+	}
 }

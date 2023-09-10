@@ -59,4 +59,9 @@ public class StudentService
 	{
 		return studentRepo.getStudentOrderByfirstName();
 	}
+	
+	public List<Student> getStudentsASCFaname()
+	{
+		return studentRepo.getStudentOrderByfirstName();
+	}
 }

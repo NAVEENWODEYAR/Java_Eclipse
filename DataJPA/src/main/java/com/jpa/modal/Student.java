@@ -32,5 +32,5 @@ public class Student
 	@OneToMany(cascade = CascadeType.ALL)
 	@JoinColumn(name = "addressId")
 	private List<Address> address = new ArrayList<>();
-	
+		
 }

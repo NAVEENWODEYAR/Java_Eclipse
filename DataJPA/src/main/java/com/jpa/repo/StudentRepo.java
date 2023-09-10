@@ -8,8 +8,8 @@ import com.jpa.modal.Student;
 
 public interface StudentRepo extends JpaRepository<Student, Integer> 
 {
-	Student findByFirstName(String fName);
-	List<Student> findByFirstNameContaining(String fName);
-	List<Student> findByLastNameNotnull();
+	Student findByFName(String fName);
+	List<Student> findByFNameContaining(String fName);
+//	List<Student> findBylNameNotnull();
 	
 }

@@ -32,6 +32,6 @@ public class StudentService
 	// 3. findByFirstName
 	public Student getByName(String fName)
 	{
-		return studentRepo.findByFirstName(fName);
+		return studentRepo.findByfName(fName);
 	}
 }

@@ -44,6 +44,6 @@ public class StudentService
 	// 5. findBylNameNotNull
 	public List<Student> getBylNameNotNull()
 	{
-		return studentRepo.findBylNameNotNull();
+		return studentRepo.findByLaNameNotNull();
 	}
 }

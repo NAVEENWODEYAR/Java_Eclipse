@@ -8,7 +8,10 @@ import org.springframework.stereotype.Service;
 import com.jpa.modal.Student;
 import com.jpa.repo.StudentRepo;
 
+import lombok.extern.slf4j.Slf4j;
+
 @Service
+@Slf4j
 public class StudentService
 {
 	// Constructor dependency injection,
@@ -19,7 +22,9 @@ public class StudentService
 	//1. INSERT INTO table_name VALUES();
 	public Student insertStudent(Student student)
 	{
-		return studentRepo.save(student);
+		Student st =  studentRepo.save(student);
+		log.info("Student {},saved to the database",student.getFaName());
+		return st;
 	}
 	
 	// 2. Select * from table_name,

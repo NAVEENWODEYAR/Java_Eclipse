@@ -11,6 +11,7 @@ import lombok.*;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 @Entity
 @Table(name = "map_Student",uniqueConstraints = @UniqueConstraint(columnNames = "Student MailId"))
 public class Student 

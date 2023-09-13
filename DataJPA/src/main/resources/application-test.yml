@@ -1,6 +1,6 @@
 # Test Environment configuraions
 server:
-  port: 1
+  port: 12
   
 spring:
   datasource:

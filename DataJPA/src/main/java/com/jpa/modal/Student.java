@@ -17,7 +17,8 @@ import lombok.*;
 public class Student 
 {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@SequenceGenerator(name = "Student_Sequence",sequenceName = "id_Sequence",allocationSize = 1)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE,generator = "Student_Sequence")
 	@Column(name = "Student Id")
 	private int stId;
 	

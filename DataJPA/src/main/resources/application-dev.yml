@@ -1,4 +1,4 @@
-# Development Environment configuraions
+# Development Environment configurations
 server:
   port: 1234
   

@@ -7,6 +7,7 @@ public class Optional_Ex
 	@SuppressWarnings("unused")
 	public static void main(String[] args) 
 	{
+System.out.println("Optional class demo");
 		// Optional class is used to solve the NullPointerException
 		
 		int[] roll_No = {1,2,3,4,5,6,7,8,9};

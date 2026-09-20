@@ -10,7 +10,7 @@ public class Lamda_Ex2 {
 		// interface method implementation
 		Lambda_Ex2 l = (a,b) -> {
 				System.out.println("Lambda Expression..,");
-				System.out.println("Sum of the given numbers: "+ (a+b));
+				System.out.println("Sum of the given numbers using Lambda expression: "+ (a+b));
 				return a;
 		};
 		l.add_No(4, 4);
